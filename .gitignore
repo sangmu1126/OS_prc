@@ -1,3 +1,4 @@
-.swap
+#ignore files
+.swp
 temp/
 *.o
