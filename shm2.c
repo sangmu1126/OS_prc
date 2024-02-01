@@ -22,7 +22,7 @@ int main() {
 		shmptr1 = (char*) shmat(shmid, NULL, 0); // shm connect,reference
 		for(i=0;i<10;i++)
 			shmptr1[i] = i*10;
-		shmdt(shmptr1); // Connect children with shm, reference delete
+		shmdt(shmptr1); // Delete connction&ref between children process and shm
 		exit(0);
 	}
 	else { // parent process
